@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>techns - userinfo</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css"/>
+	<link rel="shortcut icon" href="./images/favicon.png">
+	<script src="js/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="js/designOption.js"></script>
+	<script src="js/notification.js"></script>
+</head>
+<body>
+
+	<div class="wrap">
+
+<!-- ユーザー情報ページ -->
+
+<div id="techns_userinfo">
+
+	<div class="cover">
+		<img src="images/back.jpg" alt="cover">
+	</div>
+
+	<div id="techns_user_thumbail">
+		<img src="images/himenon.png" alt="Himenon">
+	</div>
+
+	<h3>Himekyun</h3>
+
+			<ul class="user_card">
+				<li>
+					<a href=""><strong>23</strong><span>投稿数</span></a>
+				</li>
+				<li>
+					<span class="notification-counter">10</span>
+					<a href=""><strong>10</strong><span>リアクション数</span></a>
+				</li>
+			</ul>
+
+	<div class="user_panels">
+		<ul>
+			<li>
+				<p>
+				<span>2015/09/06</span>
+				動的配列の初期化ミスったー
+				</p>
+			</li>
+			<li>
+				<p>
+				<span>2015/09/06</span>
+				動的配列の初期化ミスったー
+				</p>
+			</li>
+			<li>
+				<p>
+				<span>2015/09/06</span>
+				動的配列の初期化ミスったー
+				</p>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<!-- ここまでユーザー情報 -->
+
+<!-- ここからタイムライン -->
+
+	<div id="techns_timeline">
+		<ul id="tab_bar">
+			<li><a href="" id="active_tag">TL</a>
+			<li><a href="">Ruby</a>
+			<li><a href="">C</a>
+			<li><a href="">+</a>
+		</ul>
+
+		<!-- ここからクラス -->
+
+		<div id="rank">
+			<ul>
+				<li><a href="" id="active_rank">初級</a>
+				<li><a href="">中級</a>
+				<li><a href="">上級</a>
+			</ul>
+		</div>
+
+		<!-- ここまでクラス -->
+
+		<form method="post" action="" id="tweet_form">
+			<textarea name="" id="" cols="30" rows="1"></textarea>
+			<input type="submit" class="techns_submit" value="投稿する">
+		</form>
+
+<ul class="contents">
+
+<!-- ここから1つのコンテンツ -->
+
+<li data-id="1">
+	<img src="images/himenon.png" alt="">
+	<div class="content">
+		<strong>username</strong>
+		<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit perferendis culpa iure, voluptatem ipsam facere eligendi non! Aliquid assumenda reiciendis incidunt, aut est qui iusto quae in ullam quas quibusdam.
+			<code>
+				<pre>
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+}
+</pre>
+			</code>
+		</p>
+		<div class="reaction_panel">
+		<ul>
+			<li><a href="#" data-type="0">おつかれさん</a></li>
+			<li><a href="#" data-type="1">いいね</a></li>
+			<li><a href="#" data-type="2">おれも</a></li>
+			<li><a href="#" data-type="3">w</a></li>
+		</ul>
+	</div>
+
+	<!-- ここから返信用のブロック post-id type 0,1,2,3 -->
+
+	<div class="reply-panel">
+		<ul class="contents-reply">
+			<li>
+				<img src="images/himenon.png" alt="">
+				<div class="content">
+					<strong>username</strong>
+					<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit perferendis culpa iure, voluptatem ipsam facere eligendi non! Aliquid assumenda reiciendis incidunt, aut est qui iusto quae in ullam quas quibusdam.
+						<code>
+							<pre>
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+}
+							</pre>
+						</code>
+					</p>
+					<div class="reaction_panel">
+					<ul>
+						<li><a href="#" data-type="0">おつかれさん</a></li>
+						<li><a href="#" data-type="1">いいね</a></li>
+						<li><a href="#" data-type="2">おれも</a></li>
+						<li><a href="#" data-type="3">w</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ここまで返信用のブロック -->
+
+	<!-- ここから返信するフォームボックス -->
+		<div class="reply-1 reply-form">
+			<form action="">
+				<textarea name="" id="" cols="30" rows="1"></textarea>
+				<input type="submit" value="返信する">
+				<a href="" class="no-reply">返信しない</a>
+			</form>
+		</div>
+	</div>
+	<!-- ここまで返信するフォームボックス -->
+
+	<!-- 返信ボタン:toggle -->
+	<div class="reply-button-form">
+		<a href="#" data-replyid="1" class="show_reply">このスレッドに返信する</a>
+	</div>
+	<!-- 返信ボタン:toggle -->
+</li>
+<!-- ここまで1つのコンテンツ -->
+
+
+			</body>
+			</html>

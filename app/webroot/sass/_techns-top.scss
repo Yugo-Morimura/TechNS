@@ -1,0 +1,77 @@
+html, body {
+	height: 100%;
+}
+
+#techns-top {
+	background-image: url('../images/cover2.jpg');
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	height: 100%;
+	h1 {
+		width: 100%;
+		font-size: 32px;
+		color: #FFF;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+		font-weight: bold;
+	  font-family:”ＭＳ Ｐ明朝”, “MS PMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, serif;
+		text-align: center;
+		position: relative;
+		top: 7%;
+	}
+	.sign_up {
+		display: none;
+	}
+	.top-form {
+		width: 320px;
+		overflow: hidden;
+		margin: 0 auto;
+		position: relative;
+		top: 10%;
+		background-color: #FFF;
+		padding: 30px 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+		transform: scale(1.02);
+		h2 {
+			text-align: center;
+			font-size: 24px;
+			padding: 5px 0;
+			margin-bottom: 20px;
+		}
+		.switch {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 15px;
+			.sub_text {
+					color: #CCC;
+			}
+		}
+		input {
+			padding: 10px;
+			font-size: 16px;
+			width: 100%;
+			margin-bottom: 10px;
+			&:focus {
+				outline: 0;
+				border-color: 0 2px rgba(153,153,153,0.2);
+			}
+		}
+		input[type=submit] {
+			@include appearance(none);
+			display: block;
+			padding: 5px 0;
+			height: 64px;
+			width: 64px;
+			border-radius: 50%;
+			margin: auto;
+			background-color: #FFF;
+			border: 3px solid #EEE;
+			&:hover {
+				transition: 0.2s linear all;
+				cursor: pointer;
+				background-color: #1EFF59;
+			}
+		}
+	}
+}

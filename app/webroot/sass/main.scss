@@ -1,0 +1,34 @@
+@import 'compass';
+@import 'compass/reset';
+
+*{
+		@include box-sizing(border-box);
+}
+
+@import 'techns-top';
+
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+}
+
+
+pre code {
+	font-family: 'Monaco';
+	font-size: 14px;
+	font-weight: normal;
+	margin: 10px 0;
+	line-height: 1.4em;
+	border: 1px solid #CCC;
+}
+
+#techns_userinfo,
+#techns_timeline {
+	float: left;
+}
+
+@import 'techns-userinfo';
+@import 'techns-timeline';
+

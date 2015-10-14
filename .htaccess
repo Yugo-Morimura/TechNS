@@ -1,0 +1,15 @@
+#####phpversion#####
+AddHandler x-httpd-php5.5 .php .phps
+#####end:phpversion#####
+
+#####fastcgi#####
+AddHandler fcgid-script .php .phps
+FCGIWrapper "/home/t12/test.hits.jp/php/php-cgi -c /home/t12/test.hits.jp/php" .php
+FCGIWrapper "/home/t12/test.hits.jp/php/php-cgi -c /home/t12/test.hits.jp/php" .phps
+#####end:fastcgi#####
+
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>

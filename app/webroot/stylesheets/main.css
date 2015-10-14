@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/main.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/_techns-top.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../sass/_techns-top.scss */
+#techns-top {
+  background-image: url("../images/cover2.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 100%;
+}
+/* line 11, ../sass/_techns-top.scss */
+#techns-top h1 {
+  width: 100%;
+  font-size: 32px;
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-family: ”ＭＳ Ｐ明朝”, “MS PMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, serif;
+  text-align: center;
+  position: relative;
+  top: 7%;
+}
+/* line 22, ../sass/_techns-top.scss */
+#techns-top .sign_up {
+  display: none;
+}
+/* line 25, ../sass/_techns-top.scss */
+#techns-top .top-form {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  background-color: #FFF;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.02);
+}
+/* line 36, ../sass/_techns-top.scss */
+#techns-top .top-form h2 {
+  text-align: center;
+  font-size: 24px;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+/* line 42, ../sass/_techns-top.scss */
+#techns-top .top-form .switch {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 46, ../sass/_techns-top.scss */
+#techns-top .top-form .switch .sub_text {
+  color: #CCC;
+}
+/* line 50, ../sass/_techns-top.scss */
+#techns-top .top-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 55, ../sass/_techns-top.scss */
+#techns-top .top-form input:focus {
+  outline: 0;
+  border-color: 0 2px rgba(153, 153, 153, 0.2);
+}
+/* line 60, ../sass/_techns-top.scss */
+#techns-top .top-form input[type=submit] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  padding: 5px 0;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #FFF;
+  border: 3px solid #EEE;
+}
+/* line 70, ../sass/_techns-top.scss */
+#techns-top .top-form input[type=submit]:hover {
+  transition: 0.2s linear all;
+  cursor: pointer;
+  background-color: #1EFF59;
+}
+
+/* line 10, ../sass/main.scss */
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+}
+
+/* line 18, ../sass/main.scss */
+pre code {
+  font-family: 'Monaco';
+  font-size: 14px;
+  font-weight: normal;
+  margin: 10px 0;
+  line-height: 1.4em;
+  border: 1px solid #CCC;
+}
+
+/* line 27, ../sass/main.scss */
+#techns_userinfo,
+#techns_timeline {
+  float: left;
+}
+
+/* line 19, ../sass/_techns-userinfo.scss */
+#techns_userinfo {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 25, ../sass/_techns-userinfo.scss */
+#techns_userinfo .cover {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+/* line 30, ../sass/_techns-userinfo.scss */
+#techns_userinfo .cover img {
+  height: 200px;
+}
+/* line 34, ../sass/_techns-userinfo.scss */
+#techns_userinfo #techns_user_thumbail {
+  margin: 0 auto;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  border-radius: 64px;
+  border: solid #EEE 3px;
+  top: -64px;
+  margin-bottom: -64px;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+/* line 46, ../sass/_techns-userinfo.scss */
+#techns_userinfo #techns_user_thumbail img {
+  width: 100%;
+  height: 100%;
+}
+/* line 51, ../sass/_techns-userinfo.scss */
+#techns_userinfo h3 {
+  padding: 10px 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+/* line 59, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 64, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card li {
+  position: relative;
+  float: left;
+  width: 50%;
+  display: block;
+  text-align: center;
+  background-color: #F6F8F9;
+}
+/* line 72, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card a {
+  color: #4a4a4a;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+}
+/* line 77, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card a:hover {
+  background-color: #e6e9ea;
+}
+/* line 80, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card a strong {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+/* line 86, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card a span {
+  padding: 5px 0;
+  font-size: 13px;
+}
+/* line 91, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_card .notification-counter {
+  position: absolute;
+  display: block;
+  background-color: red;
+  width: 36px;
+  height: 36px;
+  font-size: 12px;
+  color: #FFF;
+  padding-top: 9px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  right: 0;
+  top: -5px;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+/* line 110, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_panels li {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+/* line 113, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_panels li:first-child {
+  border-top: 1px solid #ddd;
+}
+/* line 116, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_panels li:last-child {
+  border-bottom: none;
+}
+/* line 119, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_panels li p {
+  float: left;
+  line-height: 1.3em;
+  padding: 13px 0 14px 20px;
+}
+/* line 123, ../sass/_techns-userinfo.scss */
+#techns_userinfo .user_panels li p span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 1, ../sass/_techns-timeline.scss */
+.techns_submit {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  -moz-box-shadow: inset 0px -3px 5px -8px #3dc21b;
+  -webkit-box-shadow: inset 0px -3px 5px -8px #3dc21b;
+  box-shadow: inset 0px -3px 5px -8px #3dc21b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #12e049), color-stop(1, #5cc225));
+  background: -moz-linear-gradient(top, #12e049 5%, #5cc225 100%);
+  background: -webkit-linear-gradient(top, #12e049 5%, #5cc225 100%);
+  background: -o-linear-gradient(top, #12e049 5%, #5cc225 100%);
+  background: -ms-linear-gradient(top, #12e049 5%, #5cc225 100%);
+  background: linear-gradient(to bottom, #12e049 5%, #5cc225 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#12e049', endColorstr='#5cc225',GradientType=0);
+  background-color: #12e049;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 8px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+/* line 28, ../sass/_techns-timeline.scss */
+.techns_submit :hover {
+  padding-top: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cc225), color-stop(1, #12e049));
+  background: -moz-linear-gradient(top, #5cc225 5%, #12e049 100%);
+  background: -webkit-linear-gradient(top, #5cc225 5%, #12e049 100%);
+  background: -o-linear-gradient(top, #5cc225 5%, #12e049 100%);
+  background: -ms-linear-gradient(top, #5cc225 5%, #12e049 100%);
+  background: linear-gradient(to bottom, #5cc225 5%, #12e049 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cc225', endColorstr='#12e049',GradientType=0);
+  background-color: #5cc225;
+}
+
+/* line 39, ../sass/_techns-timeline.scss */
+.techns_submit :active {
+  position: relative;
+  top: 3px;
+  padding-top: 5px;
+  color: red;
+}
+
+/* line 47, ../sass/_techns-timeline.scss */
+#techns_timeline {
+  width: 600px;
+  height: 600px;
+  margin-left: 20px;
+}
+/* line 51, ../sass/_techns-timeline.scss */
+#techns_timeline #tab_bar {
+  overflow: hidden;
+  text-align: left;
+}
+/* line 54, ../sass/_techns-timeline.scss */
+#techns_timeline #tab_bar li {
+  display: inline-block;
+}
+/* line 57, ../sass/_techns-timeline.scss */
+#techns_timeline #tab_bar li a {
+  color: #666;
+  height: 37px;
+  font-weight: bold;
+  display: block;
+  padding-top: 10px;
+  padding: 10px 18px 2px 18px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: #ddd 1px solid;
+}
+/* line 71, ../sass/_techns-timeline.scss */
+#techns_timeline #tab_bar li:first-child a {
+  border-top-left-radius: 5px;
+  border-left: 1px solid #ddd;
+}
+/* line 81, ../sass/_techns-timeline.scss */
+#techns_timeline #active_tag {
+  border-bottom: 3px solid #F34018 !important;
+  z-index: 100;
+}
+/* line 86, ../sass/_techns-timeline.scss */
+#techns_timeline #active_rank {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+}
+/* line 93, ../sass/_techns-timeline.scss */
+#techns_timeline #rank {
+  text-align: right;
+  overflow: hidden;
+  background-color: #F6F8F9;
+}
+/* line 97, ../sass/_techns-timeline.scss */
+#techns_timeline #rank ul {
+  height: 30px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+/* line 101, ../sass/_techns-timeline.scss */
+#techns_timeline #rank ul li {
+  display: inline-block;
+}
+/* line 104, ../sass/_techns-timeline.scss */
+#techns_timeline #rank ul a {
+  color: #4a4a4a;
+  display: block;
+  text-align: center;
+  padding: 7px;
+  width: 60px;
+}
+/* line 114, ../sass/_techns-timeline.scss */
+#techns_timeline #tweet_form textarea, #techns_timeline .reply-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border-color: lightcolor(#F6F8F9, 30);
+  height: 6em;
+  border-radius: 3px;
+  border-color: #EEE;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 126, ../sass/_techns-timeline.scss */
+#techns_timeline #tweet_form textarea:focus, #techns_timeline .reply-form textarea:focus {
+  outline: 1px solid #DDD;
+}
+/* line 132, ../sass/_techns-timeline.scss */
+#techns_timeline #tweet_form {
+  padding: 13px;
+  text-align: right;
+  background-color: #F6F8F9;
+  overflow: hidden;
+}
+/* line 140, ../sass/_techns-timeline.scss */
+#techns_timeline #tweet_form #input_submit {
+  width: 111px;
+  margin-top: 10px;
+}
+/* line 175, ../sass/_techns-timeline.scss */
+#techns_timeline .contents {
+  padding-bottom: 100px;
+}
+/* line 148, ../sass/_techns-timeline.scss */
+#techns_timeline .contents li {
+  padding: 13px;
+  overflow: hidden;
+  background-color: #F2F4F5;
+  border-left: 0 dashed #ddd;
+}
+/* line 153, ../sass/_techns-timeline.scss */
+#techns_timeline .contents li img {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+/* line 160, ../sass/_techns-timeline.scss */
+#techns_timeline .contents li .content {
+  width: 516px;
+  float: left;
+}
+/* line 163, ../sass/_techns-timeline.scss */
+#techns_timeline .contents li .content strong {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+}
+/* line 168, ../sass/_techns-timeline.scss */
+#techns_timeline .contents li .content p {
+  line-height: 1.3em;
+}
+/* line 148, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li {
+  padding: 13px;
+  overflow: hidden;
+  background-color: #F2F4F5;
+  border-left: 1px dashed #ddd;
+}
+/* line 153, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li img {
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+/* line 160, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li .content {
+  width: 456px;
+  float: left;
+}
+/* line 163, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li .content strong {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+}
+/* line 168, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li .content p {
+  line-height: 1.3em;
+}
+/* line 181, ../sass/_techns-timeline.scss */
+#techns_timeline .contents-reply li {
+  padding-right: 0;
+}
+/* line 185, ../sass/_techns-timeline.scss */
+#techns_timeline .reply-button-form {
+  text-align: right;
+}
+/* line 189, ../sass/_techns-timeline.scss */
+#techns_timeline .reaction_panel {
+  text-align: right;
+}
+/* line 191, ../sass/_techns-timeline.scss */
+#techns_timeline .reaction_panel ul {
+  display: inline-block;
+}
+/* line 194, ../sass/_techns-timeline.scss */
+#techns_timeline .reaction_panel ul li {
+  float: left;
+  font-size: 11px;
+  padding: 0;
+  font-weight: bold;
+  border-left: none;
+  border-right: 1px solid #ddd;
+}
+/* line 201, ../sass/_techns-timeline.scss */
+#techns_timeline .reaction_panel ul li:last-child {
+  border-right: none;
+}
+/* line 204, ../sass/_techns-timeline.scss */
+#techns_timeline .reaction_panel ul li a {
+  display: block;
+  color: #4a4a4a;
+  text-decoration: none;
+  padding: 7px;
+}
+/* line 212, ../sass/_techns-timeline.scss */
+#techns_timeline .reply-form {
+  display: none;
+}
+/* line 217, ../sass/_techns-timeline.scss */
+#techns_timeline .reply-form input[type=submit] {
+  float: right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #989696;
+  background-color: #F2F4F5;
+  border: 1px solid #989696;
+  border-radius: 3px;
+}
+/* line 225, ../sass/_techns-timeline.scss */
+#techns_timeline .reply-form input[type=submit]:hover {
+  background-color: #989696;
+  color: #F2F4F5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* line 233, ../sass/_techns-timeline.scss */
+#techns_timeline .show_reply, #techns_timeline .no-reply {
+  color: #989696;
+  padding: 5px 7px;
+  text-decoration: none;
+  border: 1px solid #989696;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+/* line 241, ../sass/_techns-timeline.scss */
+#techns_timeline .show_reply:hover, #techns_timeline .no-reply:hover {
+  background-color: #989696;
+  color: #F2F4F5;
+  transition: 0.3s;
+}
+/* line 247, ../sass/_techns-timeline.scss */
+#techns_timeline .no-reply {
+  float: right;
+  font-size: 11px;
+  margin-right: 10px;
+  padding: 6px 4px;
+}
